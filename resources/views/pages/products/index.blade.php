@@ -44,7 +44,7 @@
           <div class="container position-relative">
             <div class="row d-flex justify-content-center">
               <div class="col-lg-6 text-center">
-                <h2>Gallery Botol Plastik Bekas</h2>
+                <h2>Galeri Barang Bekas</h2>
               </div>
             </div>
           </div>
