@@ -68,10 +68,10 @@
                         </div>
                         
                       @endif
-                      @if ($product->image == null)
+                      @if ($product->images()->count() == 0)
                         <img src="https://via.placeholder.com/300" class="card-img" alt="{{ $product->name }}" style="height: 100%">
                       @else  
-                      <img src="{{ asset('storage/' . $product->image) }}" class="card-img" alt="{{ $product->name }}">
+                      <img src="{{ asset('assets/img/' . $product->images->first()->image) }}" class="card-img" alt="{{ $product->name }}">
                       @endif
                     </div>
                     <div class="col-md-8">

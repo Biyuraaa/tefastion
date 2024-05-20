@@ -49,7 +49,7 @@ class PageController extends Controller
 
     public function checkout(String $id)
     {
-        if (Auth::user()->wallet == null) {
+        if (Auth::user()->customer->wallet == null) {
             return redirect()->back()->with('error', 'Insufficient balance');
         }
         $product = Product::findOrFail($id);
