@@ -43,7 +43,7 @@ class UserController extends Controller
             $image->move(public_path('assets/img'), $imageName);
         }
 
-        User::create([
+        $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => bcrypt($request->password),
@@ -54,7 +54,7 @@ class UserController extends Controller
         ]);
 
         Seller::create([
-            'seller_id' => $request->user_id,
+            'seller_id' => $user->id,
         ]);
 
         return redirect()->route('users.index');
