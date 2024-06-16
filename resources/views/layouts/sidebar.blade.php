@@ -32,6 +32,12 @@
       </li>
       @endif
       @if (Auth::user()->role == 'admin')
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('sales.index')}}">
+            <i class="fas fa-shopping-cart"></i>
+            Sales
+          </a> 
+        </li>
       <li class="nav-item">
         <a class="nav-link" href="{{route('users.index')}}">
           <i class="fas fa-users"></i>

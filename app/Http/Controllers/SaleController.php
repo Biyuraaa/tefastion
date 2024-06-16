@@ -9,6 +9,7 @@ use App\Http\Requests\UpdateSaleRequest;
 use App\Models\Product;
 use App\Models\Transaction;
 use App\Models\Wallet;
+use Illuminate\Support\Facades\Auth;
 
 class SaleController extends Controller
 {
@@ -17,12 +18,11 @@ class SaleController extends Controller
      */
     public function index()
     {
-        if (auth()->user()->role == 'admin') {
+        if (Auth::user()->role == 'admin') {
             return view('dashboard.sales.index', ['sales' => Sale::paginate(10)]);
-        } elseif (auth()->user()->role == 'seller') {
-            $productIds = auth()->user()->seller->products->pluck('id')->toArray();
-            $sale = Sale::paginate(10);
-            // dd($sale);
+        } elseif (Auth::user()->role == 'seller') {
+            $productIds = Product::where('seller_id', Auth::user()->id)->pluck('id');
+            $sale = Sale::whereIn('product_id', $productIds)->paginate(10);
             return view('dashboard.sales.index', ['sales' => $sale]);
         }
     }
