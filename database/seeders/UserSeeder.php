@@ -23,6 +23,7 @@ class UserSeeder extends Seeder
             'image' => 'default.png',
             'address' => 'Admin Address',
         ]);
+        
 
         $seller = User::create([
             'name' => 'Seller',
@@ -37,4 +38,4 @@ class UserSeeder extends Seeder
             'seller_id' => $seller->id,
         ]);
     }
-}
+} 

@@ -12,11 +12,6 @@
           <li><a href="{{route('home')}}" class="active">Home</a></li>
           <li><a href="{{route('about')}}">About Us</a></li>
           <li><a href="{{route('products')}}">Products</a></li>
-          <li class="dropdown"><a href="#"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="{{route('gallery')}}">Organik</a></li>
-              <li><a href="{{route('gallery')}}">Non Organik</a></li>
-            </ul>
           </li>
           
         </ul>
@@ -57,7 +52,7 @@
           
           href="https://github.com/mdbootstrap/mdb-ui-kit"
           role="button"
-          ><i class="fab fa-github"></i
+          
         ></a>
         @endif
       </div>

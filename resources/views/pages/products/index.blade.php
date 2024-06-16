@@ -75,7 +75,7 @@
                           <tr>
                             <td width="200">
                               <div class="cart-product-imitation">
-                                <a href="{{ route('products.show', ['product' => $product->id]) }}">
+                                <a href="{{ route('product', ['id' => $product->id]) }}">
                                   @if ($product->images->count() == 0)
                                   <img src="https://via.placeholder.com/200" alt="{{ $product->name }}" class="img-fluid">
                                   @else

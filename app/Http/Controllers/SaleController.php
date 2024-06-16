@@ -21,7 +21,9 @@ class SaleController extends Controller
             return view('dashboard.sales.index', ['sales' => Sale::paginate(10)]);
         } elseif (auth()->user()->role == 'seller') {
             $productIds = auth()->user()->seller->products->pluck('id')->toArray();
-            return view('dashboard.sales.index', ['sales' => Sale::whereIn('product_id', $productIds)->paginate(10)]);
+            $sale = Sale::paginate(10);
+            // dd($sale);
+            return view('dashboard.sales.index', ['sales' => $sale]);
         }
     }
 

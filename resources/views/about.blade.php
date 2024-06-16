@@ -127,12 +127,12 @@
                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
               <p>
-                Platform ini sangat membantu dalam mengurangi populasi sampah yang tercemar.
+                "Platform ini sangat membantu dalam mengurangi populasi sampah yang tercemar"
               </p>
               <div class="profile mt-auto">
                 <img src="{{asset('assets/img/testimonials/M NAUFAL 2.PNG')}}" class="testimonial-img" alt="">
                 <h3>Naufal Rizky</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h4>Founder</h4>
               </div>
             </div>
           </div><!-- End testimonial item -->
@@ -143,12 +143,28 @@
                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
               <p>
-                Platform ini sangat membantu dalam mengurangi populasi sampah yang tercemar.
+                "Sangat Efektif dalam mengurangi limbah sampah lingkungan"
               </p>
               <div class="profile mt-auto">
-                <img src="{{asset('assets/img/testimonials/M NAUFAL 2.PNG')}}" class="testimonial-img" alt="">
-                <h3>Naufal Rizky</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <img src="{{asset('assets/img/testimonials/HANIF.png')}}" class="testimonial-img" alt="">
+                <h3>HANIF</h3>
+                <h4>Ceo</h4>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                "Dapat membantu keseharian dalam membersihkan sampah"
+              </p>
+              <div class="profile mt-auto">
+                <img src="{{asset('assets/img/testimonials/KEVIN.png')}}" class="testimonial-img" alt="">
+                <h3>Kevin</h3>
+                <h4>Digital Teal</h4>
               </div>
             </div>
           </div><!-- End testimonial item -->

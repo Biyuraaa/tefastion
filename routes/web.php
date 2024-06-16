@@ -93,7 +93,7 @@ Route::prefix('/dashboard')->middleware(['auth', 'verified'])->group(function ()
                 return $item->created_at->format('Y-m');
             })->sortKeys()->map(function ($item) {
                 return $item->sum('total');
-            });
+            });  
             return view('dashboard.index', [
                 'products' => Product::all(),
                 'users' => User::all(),
